@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 19, 2016, 12:14:54 AM
+    Author     : BHAVN
+*/
+
+  /********** Base styles **********/
+            * {
+                box-sizing: border-box;
+                font-family: sans-serif, Arial, Helvetica;
+            }
+            header { width: 300px;
+                     margin-right: auto;
+                     margin-left: auto;
+            }
+            .menuHeading{
+                width: 18%;
+                border-bottom: 1px solid black;
+                border-left: 1px solid black;
+                position: relative;
+                top: 0px;
+                right: 80%;
+                background-color: pink;
+                text-align: center;
+                font-weight: bold;
+            }
+            h1 {
+                margin-bottom: 15px;
+            }
+            
+            section div{
+                background-color: gray;
+                border: 1px solid black;
+                width: 98%;
+                margin: 1%;
+            }
+
+            /* Simple Responsive Framework. */
+            .row {
+                width: 100%;
+            }
+
+            /********** Desktops **********/
+            @media (min-width: 992px) {
+                .col-lg-4 {
+                    float: left;
+                    border: 1px solid black;
+                    width: 31%;
+                    margin: 1%;
+                    position: relative;
+                }
+            }
+            /********** Tablets **********/
+            @media (min-width: 768px) and (max-width: 991px) {
+                .col-md-6, .col-md-12 {
+                    float: left;
+                    border: 1px solid black;
+                    margin: 1%;
+                }
+                .col-md-6 {
+                    width: 48%;
+                   
+                }
+                .col-md-12 {
+                    width: 98%;
+                   
+                }
+            }
